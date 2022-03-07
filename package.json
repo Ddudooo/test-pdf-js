@@ -1,0 +1,33 @@
+{
+  "name": "test-pdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "lint": "eslint \"{src, test}/**/*.ts\" --fix",
+    "start": "ts-node -r tsconfig-paths/register"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.7.0",
+    "tsconfig-paths": "^3.13.0",
+    "typescript": "^4.6.2"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "dependencies": {
+    "jsbarcode": "^3.11.5",
+    "jspdf": "^2.5.1"
+  }
+}
