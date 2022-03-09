@@ -1,5 +1,5 @@
 import { jsPDF } from 'jspdf'
-import callAddFont from './fonts/HY_HEADLINE_M-normal'
+import { callAddFont } from './fonts/HY_HEADLINE_M-normal'
 const doc = new jsPDF('l', 'mm', [200, 102])
 
 jsPDF.API.events.push(['addFonts', callAddFont])
